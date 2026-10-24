@@ -16,7 +16,7 @@ Tudo o que eu uso no dia a dia com o Claude Code, pronto pra você baixar: regra
 
 ## Como os modelos trabalham
 
-- **Opus 5.5**: planeja. Analisa o projeto e faz as perguntas com o Grill Me. Também entra quando algo trava feio.
+- **Opus 5.5**: planeja. Analisa o projeto, faz as perguntas com o Grill Me e decide quais subagentes vão trabalhar (você valida a lista). Também entra quando algo trava feio.
 - **Sonnet 5.5** (esforço médio): é o líder, comanda a operação e constrói.
 - **Haiku 5.5** (esforço máximo): lê código, faz as tarefas simples, revisa e diagnostica erro.
 
@@ -32,6 +32,16 @@ A ideia é sempre gastar o mínimo de tokens: o modelo mais barato que dá conta
 5. Reinicie o Claude Code.
 
 No Mac/Linux, copie a pasta `skills/*` para `~/.claude/skills/` e o `CLAUDE.md` para `~/.claude/CLAUDE.md`.
+
+## Extras (fora desta pasta, todos grátis)
+
+| O que | Pra que serve | Como instalar |
+|---|---|---|
+| **REA** (reverse-engineer-anything) | Engenharia reversa: abrir .exe, .dll, apk, sites, apps Electron. Traz as ferramentas e a skill. | Precisa do [Node.js](https://nodejs.org). No terminal: `npx rea-agents setup` e reinicie o Claude. O `instalar.bat` oferece isso pra você. |
+| **.Start** | Processo passo a passo pra projeto grande (memória, decisões, sprints). | https://github.com/ba-lison/.Start: copie só `00-SOP-SISTEMA-OPERACIONAL-PROCESSO/.start/` pra raiz do projeto e peça "siga o .start/INICIO.md". |
+| **Claude Security** (plugin oficial) | Procura falhas de segurança no código. | No Claude Code: `/plugin` e instale `claude-security` do marketplace oficial. |
+| **usage-hud** (plugin) | Mostra quanto você já gastou de uso. | `/plugin marketplace add ba-lison/usage-hud` e depois `/plugin install usage-hud@balison-mods` |
+| **tripulacao** (plugin) | Time de agentes pronto. | `/plugin marketplace add ba-lison/tripulacao` e depois `/plugin install tripulacao@tripulacao` |
 
 ## Primeiros passos
 

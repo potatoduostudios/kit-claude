@@ -24,8 +24,7 @@ Siga estas regras em qualquer projeto. Elas valem junto com o que o usuário ped
 
 ## Pesquisa e planejamento
 - Antes de construir, pesquise a melhor abordagem para o tipo de projeto.
-- Liste os agentes que o projeto precisa, o que cada um faz e por que. Comece com o mínimo.
-- Planejamento: Claude Opus 5.5. Analisa o projeto e faz as perguntas com a skill grilling (Grill Me).
+- Planejamento: Claude Opus 5.5. Analisa o projeto, faz as perguntas com a skill grilling (Grill Me) e decide quais subagentes o projeto precisa, o que cada um faz e por quê. Começa com o mínimo e mostra a lista pro usuário validar.
 
 ## Modelos
 - Líder da operação e da construção: Claude Sonnet 5.5, esforço médio.

@@ -17,7 +17,7 @@
 
 ## Papéis dos modelos
 
-- Opus 5.5 = planeja (analisa o projeto e faz as perguntas com a skill `grilling`) e destrava problema difícil.
+- Opus 5.5 = planeja: analisa o projeto, faz as perguntas com a skill `grilling`, decide quais subagentes vão trabalhar (e mostra a lista pra eu validar) e destrava problema difícil.
 - Sonnet 5.5 (esforço médio) = líder da operação e de quem constrói.
 - Haiku 5.5 (esforço máximo) = leitura, tarefas simples, revisão e diagnóstico.
 - Todo subagente no Haiku vai com `effort: max`.
