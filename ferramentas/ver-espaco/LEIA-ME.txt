@@ -1,0 +1,31 @@
+COMO DESLOTAR O SSD (Windows 10/11)
+
+PASSO 0 - Ver o que esta ocupando espaco
+  Coloque os 2 arquivos (VER-ESPACO.bat e ver-espaco.ps1) na mesma pasta.
+  De dois cliques em VER-ESPACO.bat. Ele so MOSTRA, nao apaga nada.
+  Aparece um arquivo "relatorio-espaco.txt" na Area de Trabalho. Manda ele pra quem esta te ajudando (ou cola no Claude).
+
+PASSO 1 - Arquivos temporarios (seguro)
+  Configuracoes > Sistema > Armazenamento > Arquivos temporarios.
+  Marque tudo, MENOS "Downloads" (confira antes o que tem la). Clique em Remover.
+  Na mesma tela, ligue o "Sensor de Armazenamento": ele limpa sozinho daqui pra frente.
+
+PASSO 2 - Cache da placa de video (costuma ter dezenas de GB)
+  NVIDIA: Painel de Controle da NVIDIA > Gerenciar configuracoes 3D >
+          Tamanho do cache do sombreador > 10 GB.
+  AMD:    Software AMD > Jogos > Graficos > Redefinir cache do sombreador.
+
+PASSO 3 - Programas e jogos que nao usa mais
+  Configuracoes > Aplicativos > Aplicativos instalados > ordenar por Tamanho.
+  Desinstale o que nao usa. Jogo da Steam/Epic: da pra baixar de novo depois.
+
+PASSO 4 - O que abre junto com o Windows (deixa o PC mais leve)
+  Ctrl+Shift+Esc > Aplicativos de inicializacao.
+  Desative o que nao precisa abrir sozinho (Discord, Epic, uTorrent...).
+  Desativar nao desinstala.
+
+PASSO 5 - Lixeira e Downloads
+  Confira a Lixeira e a pasta Downloads; apague so o que tiver certeza.
+
+NAO APAGUE: pastas do Windows (C:\Windows, Program Files), arquivos de jogos na mao,
+            nem nada que voce nao saiba o que e.
