@@ -13,11 +13,12 @@ if exist "%DEST%\CLAUDE.md" (
 )
 echo.
 where npx >nul 2>&1
-if errorlevel 1 (
-  echo  - REA (engenharia reversa^) precisa do Node.js: instale em https://nodejs.org e rode "npx rea-agents setup".
-) else (
-  set /p REA="Instalar o REA (engenharia reversa)? [S/N] "
-  if /i "%REA%"=="S" npx -y rea-agents setup
-)
+if errorlevel 1 goto semnode
+set /p REA="Instalar o REA (engenharia reversa)? [S/N] "
+if /i "%REA%"=="S" call npx -y rea-agents setup
+goto fim
+:semnode
+echo  - REA (engenharia reversa) precisa do Node.js: instale em https://nodejs.org e rode "npx rea-agents setup".
+:fim
 echo Pronto! Reinicie o Claude Code.
 pause
